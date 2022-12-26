@@ -17,10 +17,10 @@ struct LoadingView: View {
             }
             .padding()
         }
-        .background(.secondary)
+        .contentShape(Rectangle())
+        .background(.ultraThinMaterial)
         .cornerRadius(10)
         .shadow(radius: 2)
-        .contentShape(Rectangle())
     }
 }
 

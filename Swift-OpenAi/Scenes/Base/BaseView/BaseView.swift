@@ -11,43 +11,46 @@ struct BaseView: View {
     @ObservedObject var viewModel = BaseViewModel()
     
     var body: some View {
-        VStack {
-            Text("Swift-OpenAI")
-                .font(.largeTitle)
-                .padding()
-            Text("This app is used to prompt various OPENAI models.")
-                .padding()
-            Text("API Key")
-            SecureField("Input API Key from 'https://beta.openai.com/account/api-keys'", text: $viewModel.apiKey)
-                .onSubmit {
-                    viewModel.setApiKey()
-                }
-            if !viewModel.availableModels.isEmpty {
-                Picker("Select a model", selection: $viewModel.selectedModel) {
-                    ForEach(viewModel.availableModels, id: \.self) {
-                        Text($0)
-                    }
-                }
-                .pickerStyle(.menu)
-            }
-            Divider()
-            if !viewModel.answer.isEmpty {
-                Text(viewModel.answer)
+        ZStack {
+            VStack {
+                Text("Swift-OpenAI")
+                    .font(.largeTitle)
                     .padding()
-            }
-            Divider()
-            Spacer()
-            if !viewModel.selectedModel.isEmpty {
-                Text("Prompt")
-                TextField("Ask Something...", text: $viewModel.question)
+                Text("This app is used to prompt various OPENAI models.")
+                    .padding()
+                Text("API Key")
+                SecureField("Input API Key from 'https://beta.openai.com/account/api-keys'", text: $viewModel.apiKey)
                     .onSubmit {
-                        viewModel.getCompletion(For: viewModel.question)
+                        viewModel.setApiKey()
                     }
+                if !viewModel.availableModels.isEmpty {
+                    Picker("Select a model", selection: $viewModel.selectedModel) {
+                        ForEach(viewModel.availableModels, id: \.self) {
+                            Text($0)
+                        }
+                    }
+                    .pickerStyle(.menu)
+                }
+                if !viewModel.answer.isEmpty {
+                    Divider()
+                    Text(viewModel.answer)
+                        .padding()
+                    Divider()
+                }
+                Spacer()
+                if !viewModel.selectedModel.isEmpty {
+                    Text("Prompt")
+                    TextField("Ask Something...", text: $viewModel.question)
+                        .onSubmit {
+                            viewModel.getCompletion(For: viewModel.question)
+                        }
+                }
             }
-        }
-        .padding()
-        .sheet(isPresented: $viewModel.isLoading) {
-            LoadingView(message: viewModel.loadingMessage)
+            .padding()
+            
+            if viewModel.isLoading {
+                LoadingView(message: viewModel.loadingMessage)
+            }
         }
     }
 }
