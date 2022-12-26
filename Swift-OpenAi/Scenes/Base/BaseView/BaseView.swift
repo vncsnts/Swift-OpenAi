@@ -30,6 +30,12 @@ struct BaseView: View {
                 }
                 .pickerStyle(.menu)
             }
+            Divider()
+            if !viewModel.answer.isEmpty {
+                Text(viewModel.answer)
+                    .padding()
+            }
+            Divider()
             Spacer()
             if !viewModel.selectedModel.isEmpty {
                 Text("Prompt")

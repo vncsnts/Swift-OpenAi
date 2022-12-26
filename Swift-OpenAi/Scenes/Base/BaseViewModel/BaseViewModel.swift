@@ -22,6 +22,7 @@ final class BaseViewModel: ObservableObject {
     @Published var isConnected = false
     @Published var availableModels = [String]()
     @Published var selectedModel = ""
+    @Published var answer = ""
     
     func setApiKey() {
         loadingMessage = "Loading OPENAI Models..."
@@ -46,8 +47,8 @@ final class BaseViewModel: ObservableObject {
             let response = await APIService.shared.getModelCompletion(model: selectedModel, prompt: prompt)
             isLoading = false
             switch response {
-            case .success(_):
-                break
+            case .success(let answerValue):
+                answer = answerValue
             case .failure(_):
                 break
             }

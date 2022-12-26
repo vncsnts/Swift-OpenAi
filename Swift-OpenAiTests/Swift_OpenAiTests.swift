@@ -34,3 +34,32 @@ final class Swift_OpenAiTests: XCTestCase {
     }
 
 }
+
+final class APIServiceTests: XCTestCase {
+    let apiKey = ""
+    func testGetAvailableModels() async {
+        APIService.shared.setApiKey(key: apiKey)
+
+        let result = await APIService.shared.getAvailableModels()
+
+        switch result {
+        case .success(let models):
+            XCTAssert(models.count > 0, "Expected at least one model")
+        case .failure(let error):
+            XCTFail("Unexpected error: \(error.message)")
+        }
+    }
+
+    func testGetModelCompletion() async {
+        APIService.shared.setApiKey(key: apiKey)
+
+        let result = await APIService.shared.getModelCompletion(model: "your_model", prompt: "your_prompt")
+
+        switch result {
+        case .success(let completion):
+            XCTAssert(!completion.isEmpty, "Expected a non-empty completion")
+        case .failure(let error):
+            XCTFail("Unexpected error: \(error.message)")
+        }
+    }
+}
