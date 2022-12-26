@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A2F74312957243000ED42D1 /* Swift_OpenAiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F74302957243000ED42D1 /* Swift_OpenAiApp.swift */; };
+		8A2F74332957243000ED42D1 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F74322957243000ED42D1 /* BaseView.swift */; };
+		8A2F74352957243000ED42D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2F74342957243000ED42D1 /* Assets.xcassets */; };
+		8A2F74382957243000ED42D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2F74372957243000ED42D1 /* Preview Assets.xcassets */; };
+		8A2F74432957243000ED42D1 /* Swift_OpenAiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F74422957243000ED42D1 /* Swift_OpenAiTests.swift */; };
+		8A2F744D2957243000ED42D1 /* Swift_OpenAiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F744C2957243000ED42D1 /* Swift_OpenAiUITests.swift */; };
+		8A2F744F2957243000ED42D1 /* Swift_OpenAiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F744E2957243000ED42D1 /* Swift_OpenAiUITestsLaunchTests.swift */; };
+		8A2F74622957247800ED42D1 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F74612957247800ED42D1 /* BaseViewModel.swift */; };
+		8A2F7466295725C500ED42D1 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F7465295725C500ED42D1 /* APIService.swift */; };
+		8A2F7468295726E000ED42D1 /* APIServiceModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F7467295726E000ED42D1 /* APIServiceModels.swift */; };
+		8A2F746B2957FCB200ED42D1 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F746A2957FCB200ED42D1 /* LoadingView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A2F743F2957243000ED42D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A2F74252957243000ED42D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A2F742C2957243000ED42D1;
+			remoteInfo = "Swift-OpenAi";
+		};
+		8A2F74492957243000ED42D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A2F74252957243000ED42D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A2F742C2957243000ED42D1;
+			remoteInfo = "Swift-OpenAi";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8A2F742D2957243000ED42D1 /* Swift-OpenAi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-OpenAi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A2F74302957243000ED42D1 /* Swift_OpenAiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_OpenAiApp.swift; sourceTree = "<group>"; };
+		8A2F74322957243000ED42D1 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		8A2F74342957243000ED42D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A2F74372957243000ED42D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8A2F74392957243000ED42D1 /* Swift_OpenAi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Swift_OpenAi.entitlements; sourceTree = "<group>"; };
+		8A2F743E2957243000ED42D1 /* Swift-OpenAiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift-OpenAiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A2F74422957243000ED42D1 /* Swift_OpenAiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_OpenAiTests.swift; sourceTree = "<group>"; };
+		8A2F74482957243000ED42D1 /* Swift-OpenAiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift-OpenAiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A2F744C2957243000ED42D1 /* Swift_OpenAiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_OpenAiUITests.swift; sourceTree = "<group>"; };
+		8A2F744E2957243000ED42D1 /* Swift_OpenAiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_OpenAiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8A2F74612957247800ED42D1 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		8A2F7465295725C500ED42D1 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		8A2F7467295726E000ED42D1 /* APIServiceModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceModels.swift; sourceTree = "<group>"; };
+		8A2F746A2957FCB200ED42D1 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A2F742A2957243000ED42D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A2F743B2957243000ED42D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A2F74452957243000ED42D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A2F74242957243000ED42D1 = {
+			isa = PBXGroup;
+			children = (
+				8A2F742F2957243000ED42D1 /* Swift-OpenAi */,
+				8A2F74412957243000ED42D1 /* Swift-OpenAiTests */,
+				8A2F744B2957243000ED42D1 /* Swift-OpenAiUITests */,
+				8A2F742E2957243000ED42D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A2F742E2957243000ED42D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A2F742D2957243000ED42D1 /* Swift-OpenAi.app */,
+				8A2F743E2957243000ED42D1 /* Swift-OpenAiTests.xctest */,
+				8A2F74482957243000ED42D1 /* Swift-OpenAiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A2F742F2957243000ED42D1 /* Swift-OpenAi */ = {
+			isa = PBXGroup;
+			children = (
+				8A2F74392957243000ED42D1 /* Swift_OpenAi.entitlements */,
+				8A2F7463295725A700ED42D1 /* Services */,
+				8A2F745D2957244900ED42D1 /* Resources */,
+				8A2F745C2957244000ED42D1 /* Common */,
+				8A2F745B2957243500ED42D1 /* Scenes */,
+				8A2F74362957243000ED42D1 /* Preview Content */,
+			);
+			path = "Swift-OpenAi";
+			sourceTree = "<group>";
+		};
+		8A2F74362957243000ED42D1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8A2F74372957243000ED42D1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8A2F74412957243000ED42D1 /* Swift-OpenAiTests */ = {
+			isa = PBXGroup;
+			children = (
+				8A2F74422957243000ED42D1 /* Swift_OpenAiTests.swift */,
+			);
+			path = "Swift-OpenAiTests";
+			sourceTree = "<group>";
+		};
+		8A2F744B2957243000ED42D1 /* Swift-OpenAiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8A2F744C2957243000ED42D1 /* Swift_OpenAiUITests.swift */,
+				8A2F744E2957243000ED42D1 /* Swift_OpenAiUITestsLaunchTests.swift */,
+			);
+			path = "Swift-OpenAiUITests";
+			sourceTree = "<group>";
+		};
+		8A2F745B2957243500ED42D1 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8A2F74692957FCA800ED42D1 /* Shared */,
+				8A2F745E2957245800ED42D1 /* Base */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		8A2F745C2957244000ED42D1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8A2F74302957243000ED42D1 /* Swift_OpenAiApp.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8A2F745D2957244900ED42D1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8A2F74342957243000ED42D1 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8A2F745E2957245800ED42D1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8A2F74602957246E00ED42D1 /* BaseViewModel */,
+				8A2F745F2957245C00ED42D1 /* BaseView */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8A2F745F2957245C00ED42D1 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				8A2F74322957243000ED42D1 /* BaseView.swift */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		8A2F74602957246E00ED42D1 /* BaseViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8A2F74612957247800ED42D1 /* BaseViewModel.swift */,
+			);
+			path = BaseViewModel;
+			sourceTree = "<group>";
+		};
+		8A2F7463295725A700ED42D1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8A2F7464295725B300ED42D1 /* APIService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8A2F7464295725B300ED42D1 /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				8A2F7465295725C500ED42D1 /* APIService.swift */,
+				8A2F7467295726E000ED42D1 /* APIServiceModels.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		8A2F74692957FCA800ED42D1 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				8A2F746A2957FCB200ED42D1 /* LoadingView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A2F742C2957243000ED42D1 /* Swift-OpenAi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A2F74522957243000ED42D1 /* Build configuration list for PBXNativeTarget "Swift-OpenAi" */;
+			buildPhases = (
+				8A2F74292957243000ED42D1 /* Sources */,
+				8A2F742A2957243000ED42D1 /* Frameworks */,
+				8A2F742B2957243000ED42D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Swift-OpenAi";
+			productName = "Swift-OpenAi";
+			productReference = 8A2F742D2957243000ED42D1 /* Swift-OpenAi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8A2F743D2957243000ED42D1 /* Swift-OpenAiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A2F74552957243000ED42D1 /* Build configuration list for PBXNativeTarget "Swift-OpenAiTests" */;
+			buildPhases = (
+				8A2F743A2957243000ED42D1 /* Sources */,
+				8A2F743B2957243000ED42D1 /* Frameworks */,
+				8A2F743C2957243000ED42D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A2F74402957243000ED42D1 /* PBXTargetDependency */,
+			);
+			name = "Swift-OpenAiTests";
+			productName = "Swift-OpenAiTests";
+			productReference = 8A2F743E2957243000ED42D1 /* Swift-OpenAiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8A2F74472957243000ED42D1 /* Swift-OpenAiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A2F74582957243000ED42D1 /* Build configuration list for PBXNativeTarget "Swift-OpenAiUITests" */;
+			buildPhases = (
+				8A2F74442957243000ED42D1 /* Sources */,
+				8A2F74452957243000ED42D1 /* Frameworks */,
+				8A2F74462957243000ED42D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A2F744A2957243000ED42D1 /* PBXTargetDependency */,
+			);
+			name = "Swift-OpenAiUITests";
+			productName = "Swift-OpenAiUITests";
+			productReference = 8A2F74482957243000ED42D1 /* Swift-OpenAiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A2F74252957243000ED42D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					8A2F742C2957243000ED42D1 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					8A2F743D2957243000ED42D1 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 8A2F742C2957243000ED42D1;
+					};
+					8A2F74472957243000ED42D1 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 8A2F742C2957243000ED42D1;
+					};
+				};
+			};
+			buildConfigurationList = 8A2F74282957243000ED42D1 /* Build configuration list for PBXProject "Swift-OpenAi" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A2F74242957243000ED42D1;
+			productRefGroup = 8A2F742E2957243000ED42D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A2F742C2957243000ED42D1 /* Swift-OpenAi */,
+				8A2F743D2957243000ED42D1 /* Swift-OpenAiTests */,
+				8A2F74472957243000ED42D1 /* Swift-OpenAiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A2F742B2957243000ED42D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A2F74382957243000ED42D1 /* Preview Assets.xcassets in Resources */,
+				8A2F74352957243000ED42D1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A2F743C2957243000ED42D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A2F74462957243000ED42D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A2F74292957243000ED42D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A2F74332957243000ED42D1 /* BaseView.swift in Sources */,
+				8A2F74312957243000ED42D1 /* Swift_OpenAiApp.swift in Sources */,
+				8A2F7468295726E000ED42D1 /* APIServiceModels.swift in Sources */,
+				8A2F7466295725C500ED42D1 /* APIService.swift in Sources */,
+				8A2F74622957247800ED42D1 /* BaseViewModel.swift in Sources */,
+				8A2F746B2957FCB200ED42D1 /* LoadingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A2F743A2957243000ED42D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A2F74432957243000ED42D1 /* Swift_OpenAiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A2F74442957243000ED42D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A2F744F2957243000ED42D1 /* Swift_OpenAiUITestsLaunchTests.swift in Sources */,
+				8A2F744D2957243000ED42D1 /* Swift_OpenAiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A2F74402957243000ED42D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A2F742C2957243000ED42D1 /* Swift-OpenAi */;
+			targetProxy = 8A2F743F2957243000ED42D1 /* PBXContainerItemProxy */;
+		};
+		8A2F744A2957243000ED42D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A2F742C2957243000ED42D1 /* Swift-OpenAi */;
+			targetProxy = 8A2F74492957243000ED42D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8A2F74502957243000ED42D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8A2F74512957243000ED42D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		8A2F74532957243000ED42D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Swift-OpenAi/Swift_OpenAi.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Swift-OpenAi/Preview Content\"";
+				DEVELOPMENT_TEAM = N5B9GF7SPN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vncsnts.Swift-OpenAi";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8A2F74542957243000ED42D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Swift-OpenAi/Swift_OpenAi.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Swift-OpenAi/Preview Content\"";
+				DEVELOPMENT_TEAM = N5B9GF7SPN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vncsnts.Swift-OpenAi";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8A2F74562957243000ED42D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N5B9GF7SPN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vncsnts.Swift-OpenAiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift-OpenAi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Swift-OpenAi";
+			};
+			name = Debug;
+		};
+		8A2F74572957243000ED42D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N5B9GF7SPN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vncsnts.Swift-OpenAiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift-OpenAi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Swift-OpenAi";
+			};
+			name = Release;
+		};
+		8A2F74592957243000ED42D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N5B9GF7SPN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vncsnts.Swift-OpenAiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Swift-OpenAi";
+			};
+			name = Debug;
+		};
+		8A2F745A2957243000ED42D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N5B9GF7SPN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vncsnts.Swift-OpenAiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Swift-OpenAi";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A2F74282957243000ED42D1 /* Build configuration list for PBXProject "Swift-OpenAi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A2F74502957243000ED42D1 /* Debug */,
+				8A2F74512957243000ED42D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A2F74522957243000ED42D1 /* Build configuration list for PBXNativeTarget "Swift-OpenAi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A2F74532957243000ED42D1 /* Debug */,
+				8A2F74542957243000ED42D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A2F74552957243000ED42D1 /* Build configuration list for PBXNativeTarget "Swift-OpenAiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A2F74562957243000ED42D1 /* Debug */,
+				8A2F74572957243000ED42D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A2F74582957243000ED42D1 /* Build configuration list for PBXNativeTarget "Swift-OpenAiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A2F74592957243000ED42D1 /* Debug */,
+				8A2F745A2957243000ED42D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A2F74252957243000ED42D1 /* Project object */;
+}
