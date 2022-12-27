@@ -11,46 +11,51 @@ struct BaseView: View {
     @ObservedObject var viewModel = BaseViewModel()
     
     var body: some View {
-        ZStack {
-            VStack {
-                Text("Swift-OpenAI")
-                    .font(.largeTitle)
-                    .padding()
-                Text("This app is used to prompt various OPENAI models.")
-                    .padding()
-                Text("API Key")
-                SecureField("Input API Key from 'https://beta.openai.com/account/api-keys'", text: $viewModel.apiKey)
-                    .onSubmit {
-                        viewModel.setApiKey()
-                    }
-                if !viewModel.availableModels.isEmpty {
-                    Picker("Select a model", selection: $viewModel.selectedModel) {
-                        ForEach(viewModel.availableModels, id: \.self) {
-                            Text($0)
-                        }
-                    }
-                    .pickerStyle(.menu)
-                }
-                if !viewModel.answer.isEmpty {
-                    Divider()
-                    Text(viewModel.answer)
+        NavigationStack {
+            ZStack {
+                VStack {
+                    Text("This app is used to prompt various OPENAI models.")
                         .padding()
-                    Divider()
-                }
-                Spacer()
-                if !viewModel.selectedModel.isEmpty {
-                    Text("Prompt")
-                    TextField("Ask Something...", text: $viewModel.question)
+                    Text("You can sign up [here](https://beta.openai.com/signup/)")
+                    Text("You may obtain your api key from [here](https://beta.openai.com/account/api-keys)")
+                    SecureField("Input API Key...", text: $viewModel.apiKey)
                         .onSubmit {
-                            viewModel.getCompletion(For: viewModel.question)
+                            viewModel.setApiKey()
                         }
+                    if !viewModel.availableModels.isEmpty {
+                        Picker("Select a model", selection: $viewModel.selectedModel) {
+                            ForEach(viewModel.availableModels, id: \.self) {
+                                Text($0)
+                            }
+                        }
+                        .pickerStyle(.menu)
+                    }
+                    if !viewModel.answer.isEmpty {
+                        Divider()
+                        Text(viewModel.answer)
+                            .fixedSize(horizontal: false, vertical: false)
+                            .padding()
+                        Divider()
+                    }
+                    Spacer()
+                    if !viewModel.selectedModel.isEmpty {
+                        VStack {
+                            Text("Prompt")
+                            TextField("Ask Something...", text: $viewModel.question)
+                                .onSubmit {
+                                    viewModel.getCompletion(For: viewModel.question)
+                                }
+                        }
+                        .padding()
+                    }
+                }
+                .padding()
+                
+                if viewModel.isLoading {
+                    LoadingView(message: viewModel.loadingMessage)
                 }
             }
-            .padding()
-            
-            if viewModel.isLoading {
-                LoadingView(message: viewModel.loadingMessage)
-            }
+            .navigationTitle("Swift-OPENAI")
         }
     }
 }

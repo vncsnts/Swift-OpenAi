@@ -49,7 +49,8 @@ final class BaseViewModel: ObservableObject {
             switch response {
             case .success(let answerValue):
                 answer = answerValue
-            case .failure(_):
+            case .failure(let error):
+                print(error)
                 break
             }
         }
