@@ -23,12 +23,15 @@ struct BaseView: View {
                             viewModel.setApiKey()
                         }
                     if !viewModel.availableModels.isEmpty {
-                        Picker("Select a model", selection: $viewModel.selectedModel) {
-                            ForEach(viewModel.availableModels, id: \.self) {
-                                Text($0)
+                        Menu(viewModel.selectedModel) {
+                            ForEach(viewModel.availableModels, id: \.self) { model in
+                                Button {
+                                    viewModel.selectedModel = model
+                                } label: {
+                                    Text(model)
+                                }
                             }
                         }
-                        .pickerStyle(.menu)
                     }
                     if !viewModel.answer.isEmpty {
                         Divider()
