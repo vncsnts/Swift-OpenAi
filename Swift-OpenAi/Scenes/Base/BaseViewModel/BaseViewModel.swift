@@ -28,7 +28,7 @@ final class BaseViewModel: ObservableObject {
         loadingMessage = "Loading OPENAI Models..."
         isLoading = true
         Task {
-            APIService.shared.setApiKey(key: apiKey)
+            await APIService.shared.setApiKey(key: apiKey)
             let response = await APIService.shared.getAvailableModels()
             isLoading = false
             switch response {

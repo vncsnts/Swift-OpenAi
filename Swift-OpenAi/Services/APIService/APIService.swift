@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class APIService {
+actor APIService {
     static let shared = APIService()
     private var apiKey: String?
     
