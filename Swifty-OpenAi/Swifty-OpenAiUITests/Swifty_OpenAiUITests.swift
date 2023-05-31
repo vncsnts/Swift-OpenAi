@@ -1,13 +1,13 @@
 //
-//  Swift_OpenAiUITests.swift
-//  Swift-OpenAiUITests
+//  Swifty_OpenAiUITests.swift
+//  Swifty-OpenAiUITests
 //
-//  Created by Vince Carlo Santos on 12/24/22.
+//  Created by Vince Carlo Santos on 5/30/23.
 //
 
 import XCTest
 
-final class Swift_OpenAiUITests: XCTestCase {
+final class Swifty_OpenAiUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

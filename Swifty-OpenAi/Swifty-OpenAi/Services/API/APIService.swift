@@ -1,8 +1,8 @@
 //
 //  APIService.swift
-//  Swift-OpenAi
+//  Swifty-OpenAi
 //
-//  Created by Vince Carlo Santos on 12/24/22.
+//  Created by Vince Carlo Santos on 5/30/23.
 //
 
 import Foundation
@@ -62,4 +62,8 @@ actor APIService {
             return .failure(.init(message: urlSessionError.localizedDescription))
         }
     }
+}
+
+struct StringError: Error {
+    var message: String
 }

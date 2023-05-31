@@ -1,8 +1,8 @@
 //
 //  BaseViewModel.swift
-//  Swift-OpenAi
+//  Swifty-OpenAi
 //
-//  Created by Vince Carlo Santos on 12/24/22.
+//  Created by Vince Carlo Santos on 5/30/23.
 //
 
 import Foundation
@@ -33,8 +33,11 @@ final class BaseViewModel: ObservableObject {
             isLoading = false
             switch response {
             case .success(let modelList):
+                print(modelList)
+                isConnected = true
                 availableModels = modelList
             case .failure(_):
+                isConnected = false
                 break
             }
         }

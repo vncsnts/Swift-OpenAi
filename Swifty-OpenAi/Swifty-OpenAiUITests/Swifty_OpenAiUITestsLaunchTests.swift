@@ -1,13 +1,13 @@
 //
-//  Swift_OpenAiUITestsLaunchTests.swift
-//  Swift-OpenAiUITests
+//  Swifty_OpenAiUITestsLaunchTests.swift
+//  Swifty-OpenAiUITests
 //
-//  Created by Vince Carlo Santos on 12/24/22.
+//  Created by Vince Carlo Santos on 5/30/23.
 //
 
 import XCTest
 
-final class Swift_OpenAiUITestsLaunchTests: XCTestCase {
+final class Swifty_OpenAiUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
